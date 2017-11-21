@@ -1,0 +1,359 @@
+html,body{width: 100%;height: 100%;font-family: 'Microsoft yahei';margin:0;font-size:14px;}
+em{  font-style: normal;}
+ul{list-style: none}
+a{text-decoration: none;color:#FFF}
+a:hover{text-decoration: none;}
+h1,h2,h3,h4,h5,h6,p,ul,li{margin: 0;padding:0;}
+input{outline: none;}
+.fl{float: left;}
+.fr{float: right;}
+.cf{zoom:1;}
+.cf:after{display: block;content: '';clear: both;}
+.pr{position: relative;}
+.pa{position: absolute;}
+.none{display: none;}
+._mt3{margin-top: -3px;}
+.mt6{margin-top: 6px;}
+.mt10{margin-top: 10px;}
+.mt20{margin-top: 20px;}
+.ml5{margin-left: 5px;}
+.ml10{margin-left: 10px;}
+.ml20{margin-left: 20px;}
+.mr10{margin-right: 10px;}
+.mr20{margin-right: 20px;}
+
+.w30{width: 30%}
+.w33{width: 33.33%}
+.w40{width: 40%}
+.w50{width: 50%}
+.w60{width: 60%}
+.w70{width: 70%}
+.w80{width: 80%}
+
+.pl0{padding-left: 0;}
+.pr0{padding-right: 0;}
+.pl5{padding-left: 5px;}
+.pr5{padding-right: 5px;}
+.pb10{padding-bottom: 10px;}
+
+.fs-12{font-size: 12px;}
+.fs-16{font-size: 16px;}
+
+.inline-block{display: inline-block;}
+.hide{
+    display: none;
+}
+.display{
+    display: block;
+}
+
+/*begin*/
+.controller{
+    width: 100%;
+    height:100%;
+    display: block;
+    overflow: hidden;
+    background: url("../img/bg.png");
+    background-size: 100% 100%;
+}
+.block{
+    height:100%;
+    overflow: hidden;
+}
+.block_1{
+    height: 35.5%;
+}
+.block_2{
+    height: 32%;
+}
+.block_3{
+    height: 32.5%;
+}
+.block_4{
+    height: 7%;
+}
+.block_5{
+    height: 64%;
+}
+.block_6{
+    height: 29%;
+}
+.block_7{
+    height: 35%;
+}
+.block_8{
+    height: 65%;
+}
+.block_9{
+    height: 100%;
+    background: beige;
+}
+.block_10{
+    height: 100%;
+    background: wheat;
+}
+.block_11{
+    height: 100%;
+    background: yellow;
+}
+.block_12{
+    height: 100%;
+    background: yellowgreen;
+}
+.block_13{
+    height: 50%;
+    background: yellow;
+}
+.block_14{
+    height: 50%;
+    background: black;
+}
+.date_box{
+    border: 5px solid #0660cc;
+    height: 85%;
+    width: 45%;
+    margin: 5% 0 0 2%;
+}
+.load_status_box{
+    /*border: 5px solid #0660cc;*/
+    height: 85%;
+    width: 47%;
+    margin: 5% 0 0 2%;
+}
+.load_status_title {
+    height: 0;
+    border-bottom: 39px solid #0456C5;
+    border-left: 0px solid transparent;
+    border-right: 19px solid transparent;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+.load_status_info{
+    border:1px solid #0548C3;
+    height:89%;
+}
+.date_p{
+    height: 15%;
+    text-align: center;
+    line-height: 250%;
+    letter-spacing: 1px;
+    color: #449BE9;
+    font-size: 17px;
+}
+.date_p em{
+    color: #FFF;
+    margin: 0 2px;
+}
+.time_p{
+    height: 15%;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #449BE9;
+    font-size: 22px;
+    border-bottom: 2px solid #064EBE;
+}
+.time_p em{
+    color: #FFF;
+    margin: 0 4px;
+}
+.safe_day{
+    height: 15%;
+    line-height: 225%;
+    text-align: center;
+    color: #FFF;
+    font-size: 18px;
+    border-bottom: 2px solid #064EBE;
+}
+.safe_day span{
+    color: #F6FF00;
+    margin: 0 8px;
+    font-size: 22px;
+}
+.electricity_num{
+    height:25%;
+    border-bottom: 2px solid #064EBE;
+}
+.electricity_num p{
+    text-align: center;
+    height: 50%;
+    line-height: 200%;
+    color: #50B3FF;
+    font-size: 16px;
+}
+.electricity_num span{
+    display: block;
+    text-align: center;
+    height: 50%;
+    line-height: 200%;
+    color: #50B3FF;
+    font-size: 12px;
+}
+.electricity_num span em{
+    color: #F6FF00;
+    margin: 0 5px;
+    font-size: 16px;
+}
+.load_rate{
+    height:25%;
+}
+.load_rate p{
+    text-align: center;
+    height: 50%;
+    line-height: 250%;
+    color: #50B3FF;
+    font-size: 16px;
+}
+.load_rate span{
+    display: block;
+    text-align: center;
+    height: 50%;
+    line-height: 250%;
+    color: #50B3FF;
+    font-size: 12px;
+}
+.load_rate span em{
+    color: #F6FF00;
+    margin: 0 5px;
+    font-size: 16px;
+}
+.load_status_info_box{
+    height: 90%;
+    width: 90%;
+    margin: 5%;
+    overflow: hidden;
+    background: -webkit-linear-gradient(#077C88, #081A7C);
+    background: -o-linear-gradient(#077C88, #081A7C);
+    background: -moz-linear-gradient(#077C88, #081A7C);
+    background: linear-gradient(#077C88, #081A7C);
+}
+.load_status_info_box p{
+    height:8%;
+    color:#FFF;
+    margin-top:2%;
+}
+.load_status_info_box p span{
+    display: block;
+    float: left;
+    margin-left: 6%;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+.load_status_info_box p em{
+    width: 26%;
+    display: block;
+    float: left;
+    font-size: 10px;
+    height: 100%;
+    background: #081B7E;
+    margin: 0 10px;
+    text-align: center;
+}
+.load_status_info_box p b{
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.curve_box{
+    height: 95%;
+    width: 95.4%;
+    border: 1px solid #004AC8;
+    margin-left: 2%;
+}
+.curve_box_title{
+    height: 12%;
+    text-align: center;
+    line-height:200%;
+    color:#FFF;
+    background: -webkit-linear-gradient(#0374D8, #053FB7); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#0374D8, #053FB7); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#0374D8, #053FB7); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#0374D8, #053FB7); /* 标准的语法 */
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.curve_box_info{
+
+}
+
+.logo{
+    height: 33%;
+    margin: 7% 0 0 5%;
+}
+.block_4_box{
+    height:100%;
+}
+.tit_box{
+    height: 33%;
+    color: #00FCFD;
+    font-size: 12px;
+    margin: 7% 0 0 2%;
+    border-right:2px solid #00FCFD;
+    padding-right:2%;
+}
+.tit_box span{
+    display: block;
+}
+.tit_box em{
+    display: block;
+}
+.tit_box2{
+    height: 33%;
+    color: #00FCFD;
+    font-size: 12px;
+    margin: 7% 0 0 5%;
+    padding-right:3%;
+}
+.tit_box2 span{
+    display: block;
+}
+.tit_box2 em{
+    display: block;
+}
+.site_title{
+    color: #FFF;
+    text-align: center;
+    line-height: 300%;
+    height: 100%;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
