@@ -51,6 +51,8 @@ input{outline: none;}
 .controller{
     width: 100%;
     height:100%;
+    min-width:1366px;
+    min-height:768px;
     display: block;
     overflow: hidden;
     background: url("../img/bg.png");
@@ -73,10 +75,10 @@ input{outline: none;}
     height: 7%;
 }
 .block_5{
-    height: 64%;
+    height: 60.5%;
 }
 .block_6{
-    height: 29%;
+    height: 32%;
 }
 .block_7{
     height: 35%;
@@ -86,27 +88,21 @@ input{outline: none;}
 }
 .block_9{
     height: 100%;
-    background: beige;
 }
 .block_10{
     height: 100%;
-    background: wheat;
 }
 .block_11{
     height: 100%;
-    background: yellow;
 }
 .block_12{
     height: 100%;
-    background: yellowgreen;
 }
 .block_13{
     height: 50%;
-    background: yellow;
 }
 .block_14{
     height: 50%;
-    background: black;
 }
 .date_box{
     border: 5px solid #0660cc;
@@ -115,7 +111,6 @@ input{outline: none;}
     margin: 5% 0 0 2%;
 }
 .load_status_box{
-    /*border: 5px solid #0660cc;*/
     height: 85%;
     width: 47%;
     margin: 5% 0 0 2%;
@@ -142,7 +137,7 @@ input{outline: none;}
     line-height: 250%;
     letter-spacing: 1px;
     color: #449BE9;
-    font-size: 17px;
+    font-size: 15px;
 }
 .date_p em{
     color: #FFF;
@@ -153,7 +148,7 @@ input{outline: none;}
     text-align: center;
     letter-spacing: 1px;
     color: #449BE9;
-    font-size: 22px;
+    font-size: 20px;
     border-bottom: 2px solid #064EBE;
 }
 .time_p em{
@@ -238,9 +233,8 @@ input{outline: none;}
 .load_status_info_box p span{
     display: block;
     float: left;
-    margin-left: 6%;
-    letter-spacing: 1px;
-    font-size: 13px;
+    margin-left: 3%;
+    font-size: 12px;
 }
 .load_status_info_box p em{
     width: 26%;
@@ -249,7 +243,7 @@ input{outline: none;}
     font-size: 10px;
     height: 100%;
     background: #081B7E;
-    margin: 0 10px;
+    margin: 0 6px;
     text-align: center;
 }
 .load_status_info_box p b{
@@ -272,7 +266,7 @@ input{outline: none;}
     background: -o-linear-gradient(#0374D8, #053FB7); /* Opera 11.1 - 12.0 */
     background: -moz-linear-gradient(#0374D8, #053FB7); /* Firefox 3.6 - 15 */
     background: linear-gradient(#0374D8, #053FB7); /* 标准的语法 */
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     letter-spacing: 1px;
 }
@@ -282,7 +276,7 @@ input{outline: none;}
 
 .logo{
     height: 33%;
-    margin: 7% 0 0 5%;
+    margin: 7% 0 0 0%;
 }
 .block_4_box{
     height:100%;
@@ -305,8 +299,8 @@ input{outline: none;}
     height: 33%;
     color: #00FCFD;
     font-size: 12px;
-    margin: 7% 0 0 5%;
-    padding-right:3%;
+    margin: 7% 0 0 3%;
+    padding-right:1%;
 }
 .tit_box2 span{
     display: block;
@@ -319,14 +313,247 @@ input{outline: none;}
     text-align: center;
     line-height: 300%;
     height: 100%;
-    font-size: 20px;
-    letter-spacing: 2px;
+    font-size: 16px;
+    letter-spacing: 1px;
     font-weight: bold;
+}
+
+.change_dv select{
+    background: blue;
+    border-radius: 50px;
+    border: none;
+    color: #FFF;
+    font-size: 12px;
+    padding-left: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 10px;
+    width: 130px;
+}
+.change_dv em{
+    width: 0;
+    height: 0;
+    border-top: 5px solid #FFFFFF;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+}
+.main_box{
+    height: 95%;
+}
+.main_box_title{
+    line-height: 200%;
+    color: #FFF;
+    background: -webkit-linear-gradient(#0374D8, #053FB7);
+    background: -o-linear-gradient(#0374D8, #053FB7);
+    background: -moz-linear-gradient(#0374D8, #053FB7);
+    background: linear-gradient(#0374D8, #053FB7);
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+.scale{
+    height: 90%;
+    width: 35%;
+    background: #053fb7;
+    opacity: .4;
+    margin-left: 2%;
+    border-top:1px solid red;
+    border-left:1px solid red;
+    border-bottom:1px solid red;
+}
+.scale h1{
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    height: 16%;
+    line-height: 30px;
+    border-right:1px solid red;
+
+}
+.scale p{
+    color: #FFF;
+    font-size: 12px;
+    height: 14%;
+    line-height: 30px;
+}
+.scale span{
+    display: block;
+    float: left;
+    border-top: 1px solid red;
+    border-right: 1px solid red;
+    width: 60%;
+    text-indent: 12%;
+}
+.scale em{
+    color:yellow;
+    display: block;
+    float: left;
+    border-top:1px solid red;
+    border-right:1px solid red;
+    width:39%;
+}
+.scale i{
+    display: block;
+    margin-right: 17%;
+    float: right;
+    font-style: normal;
+}
+.scale b{
+    display: block;
+    float: right;
+    color: #FFF;
+    margin-right: 18%;
+    font-size: 12px;
+}
+.icon_box_1{
+    float: left;
+    width: 26%;
+    margin: 9% 0 0 4%;
+}
+.icon_box_1 p{
+    height: 30px;
+    color: #FFF;
+    clear: both;
+    line-height: 30px;
+}
+.icon_box_1 em{
+    display: block;
+    float: left;
+}
+.icon_box_1 span{
+    display: block;
+    float: left;
+    margin-left:10px;
+}
+
+.list_box{
+    height: 85%;
+    width: 100%;
+    margin: 10% 0 0 2%;
+}
+.list_title {
+    height: 0;
+    border-bottom: 39px solid #0456C5;
+    border-left: 19px solid transparent;
+    border-right: 0px solid transparent;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+.list_info{
+    display: block;
+    overflow-y: scroll;
+    height: 100%;
+}
+.list_info li{
+    height:30px;
+}
+.list_info_head {
+
+}
+.list_info_head p{
+    background: blue;
+    float: left;
+    width: 30%;
+    text-align: center;
+    color: #FFF;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 5px 1%;
+    border: 1px solid red;
+}
+.list_info_body{
+
+}
+.list_info_body p{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    color: #FFF;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.list_info::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: blue;
+}
+.list_info::-webkit-scrollbar-thumb
+{
+    background-color: #053fb7;
+    border-radius: 10px;
 }
 
 
 
+.list2_box{
+    height: 85%;
+    width: 100%;
+    margin: 10% 0 0 2%;
+}
+.list2_title {
+    height: 17%;
+    text-align: center;
+    line-height: 230%;
+    color: #FFF;
+    background: -webkit-linear-gradient(#0374D8, #053FB7);
+    background: -o-linear-gradient(#0374D8, #053FB7);
+    background: -moz-linear-gradient(#0374D8, #053FB7);
+    background: linear-gradient(#0374D8, #053FB7);
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.list2_info{
+    display: block;
+    overflow-y: scroll;
+    height: 100%;
+}
+.list2_info li{
+    height:30px;
+}
+.list2_info_head {
 
+}
+.list2_info_head p{
+    background: blue;
+    float: left;
+    width: 30%;
+    text-align: center;
+    color: #FFF;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 5px 1%;
+    border: 1px solid red;
+}
+.list2_info_body{
+
+}
+.list2_info_body p{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    color: #FFF;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.list2_info::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: blue;
+}
+.list2_info::-webkit-scrollbar-thumb
+{
+    background-color: #053fb7;
+    border-radius: 10px;
+}
 
 
 
