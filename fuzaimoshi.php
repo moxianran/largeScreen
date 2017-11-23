@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link href="css/css.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="js/jquery-1.9.js"></script>
-
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/echarts.js"></script>
+    <script type="text/javascript" src="js/Date.js"></script>
 </head>
 <body>
     <div class="controller">
@@ -17,13 +18,13 @@
                 <div class="date_box fl">
 
                     <p class="date_p">
-                        <em>2017</em>年<em>4</em>月<em>14</em>日 星期<em>一</em>
+                        <em id="year"></em>年<em id="month"></em>月<em id="day"></em>日 星期<em id="week"></em>
                     </p>
                     <p class="time_p">
-                        <em>02</em>时<em>02</em>分<em>34</em>秒
+                        <em id="hour"></em>时<em id="minute"></em>分<em id="second"></em>秒
                     </p>
                     <p class="safe_day">
-                        安全天数<span>777</span>天
+                        安全天数<span id="safeTime"></span>天
                     </p>
 
                     <div class="electricity_num">
@@ -101,12 +102,9 @@
 
             <!--小屏2开始-->
             <div class="block_2">
-
                 <div class="curve_box">
                     <div class="curve_box_title">宁海全县负荷曲线</div>
-                    <div class="curve_box_info">
-
-                    </div>
+                    <div class="curve_box_info" id="main1" style="height: 230px;width:400px;"></div>
                 </div>
             </div>
             <!--小屏2结束-->
@@ -115,9 +113,7 @@
             <div class="block_3">
                 <div class="curve_box">
                     <div class="curve_box_title">各乡镇负荷曲线</div>
-                    <div class="curve_box_info">
-
-                    </div>
+                    <div class="curve_box_info" id="main2" style="height: 230px;width:400px;"></div>
                 </div>
             </div>
             <!--小屏3结束-->
@@ -166,9 +162,6 @@
 
                     </div>
                 </div>
-
-
-
             </div>
             <div class="block_6">
                 <div class="scale fl">
@@ -582,22 +575,13 @@
                                     <p>80%</p>
                                 </li>
                             </ul>
-
-
-
-
                         </div>
                     </div>
                 </div>
-
             </div>
-
-
-
         </div>
-
     </div>
-
-
+    <script type="text/javascript" src="js/chart01.js"></script>
+    <script type="text/javascript" src="js/chart02.js"></script>
 </body>
 </html>
