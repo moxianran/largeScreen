@@ -7,6 +7,7 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/echarts.js"></script>
     <script type="text/javascript" src="js/Date.js"></script>
+
 </head>
 <body>
     <div class="controller">
@@ -104,7 +105,7 @@
             <div class="block_2">
                 <div class="curve_box">
                     <div class="curve_box_title">宁海全县负荷曲线</div>
-                    <div class="curve_box_info" id="main1" style="height: 230px;width:400px;"></div>
+                    <div class="curve_box_info" id="main1"></div>
                 </div>
             </div>
             <!--小屏2结束-->
@@ -113,7 +114,7 @@
             <div class="block_3">
                 <div class="curve_box">
                     <div class="curve_box_title">各乡镇负荷曲线</div>
-                    <div class="curve_box_info" id="main2" style="height: 230px;width:400px;"></div>
+                    <div class="curve_box_info" id="main2"></div>
                 </div>
             </div>
             <!--小屏3结束-->
@@ -160,38 +161,42 @@
                     <div class="main_box_title">宁海电网主网接线图</div>
                     <div class="main_box_info">
 
+                        <div class="item" id="item">
+
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="block_6">
                 <div class="scale fl">
-                    <h1>电网规模</h1>
-                    <p>
-                        <span>同掉电路</span>
-                        <em><b>座</b><i>42</i></em>
-                    </p>
-                    <p>
-                        <span>同掉电路</span>
-                        <em><b>座</b><i>42</i></em>
-                    </p>
-                    <p>
-                        <span>同掉电路</span>
-                        <em><b>座</b><i>342</i></em>
-                    </p>
-                    <p>
-                        <span>同掉电路</span>
-                        <em><b>座</b><i>242</i></em>
-                    </p>
-                    <p>
-                        <span>同掉电路</span>
-                        <em><b>座</b><i>42</i></em>
-                    </p>
-                    <p>
-                        <span>同掉电路</span>
-                        <em><b>座</b><i>42</i></em>
-                    </p>
-
-
+                    <div class="scale_bg"></div>
+                    <div class="scale_info">
+                        <h1>电网规模</h1>
+                        <p>
+                            <span>同掉电路</span>
+                            <em><b>座</b><i>42</i></em>
+                        </p>
+                        <p>
+                            <span>同掉电路</span>
+                            <em><b>座</b><i>42</i></em>
+                        </p>
+                        <p>
+                            <span>同掉电路</span>
+                            <em><b>座</b><i>342</i></em>
+                        </p>
+                        <p>
+                            <span>同掉电路</span>
+                            <em><b>座</b><i>242</i></em>
+                        </p>
+                        <p>
+                            <span>同掉电路</span>
+                            <em><b>座</b><i>42</i></em>
+                        </p>
+                        <p>
+                            <span>同掉电路</span>
+                            <em><b>座</b><i>42</i></em>
+                        </p>
+                    </div>
                 </div>
 
                 <div class="icon_box_1">
@@ -234,7 +239,7 @@
         <div class="block w30 fl">
             <div class="block_7">
 
-                <div class="block_9 w50 fl">
+                <div class="block_9 fl">
                     <div class="list_box fl">
                         <div class="list_title">负荷情况</div>
                         <div class="list_info">
@@ -295,14 +300,10 @@
                                     <p>80%</p>
                                 </li>
                             </ul>
-
-
-
-
                         </div>
                     </div>
                 </div>
-                <div class="block_10 w50 fl">
+                <div class="block_10 fl">
                     <div class="list2_box fl">
                         <div class="list2_title">负荷情况</div>
                         <div class="list2_info">
@@ -363,18 +364,13 @@
                                     <p>80%</p>
                                 </li>
                             </ul>
-
-
-
-
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <div class="block_8">
-                <div class="block_11 fl w50">
+                <div class="block_11 fl">
                     <div class="block_13">
                         <div class="list2_box fl">
                             <div class="list2_title">负荷情况</div>
@@ -436,10 +432,6 @@
                                         <p>80%</p>
                                     </li>
                                 </ul>
-
-
-
-
                             </div>
                         </div>
                     </div>
@@ -504,18 +496,14 @@
                                         <p>80%</p>
                                     </li>
                                 </ul>
-
-
-
-
                             </div>
                         </div>
                     </div>
 
                 </div>
 
-                <div class="block_12 fl w50">
-                    <div class="list2_box fl">
+                <div class="block_12 fl">
+                    <div class="list2_box fl" style="height: 93%;">
                         <div class="list2_title">负荷情况</div>
                         <div class="list2_info">
                             <ul>
@@ -574,6 +562,66 @@
                                     <p>变压器</p>
                                     <p>80%</p>
                                 </li>
+                                <li class="list_info_body">
+                                    <p>宁海变电所</p>
+                                    <p>变压器</p>
+                                    <p>80%</p>
+                                </li>
+                                <li class="list_info_body">
+                                    <p>宁海变电所</p>
+                                    <p>变压器</p>
+                                    <p>80%</p>
+                                </li>
+                                <li class="list_info_body">
+                                    <p>宁海变电所</p>
+                                    <p>变压器</p>
+                                    <p>80%</p>
+                                </li>
+                                <li class="list_info_body">
+                                    <p>宁海变电所</p>
+                                    <p>变压器</p>
+                                    <p>80%</p>
+                                </li>
+                                <li class="list_info_body">
+                                    <p>宁海变电所</p>
+                                    <p>变压器</p>
+                                    <p>80%</p>
+                                </li>
+                                <li class="list_info_body">
+                                    <p>宁海变电所</p>
+                                    <p>变压器</p>
+                                    <p>80%</p>
+                                </li>
+                                <li class="list_info_body">
+                                    <p>宁海变电所</p>
+                                    <p>变压器</p>
+                                    <p>80%</p>
+                                </li>
+                                <li class="list_info_body">
+                                    <p>宁海变电所</p>
+                                    <p>变压器</p>
+                                    <p>80%</p>
+                                </li>
+                                <li class="list_info_body">
+                                    <p>宁海变电所</p>
+                                    <p>变压器</p>
+                                    <p>80%</p>
+                                </li>
+                                <li class="list_info_body">
+                                    <p>宁海变电所</p>
+                                    <p>变压器</p>
+                                    <p>80%</p>
+                                </li>
+                                <li class="list_info_body">
+                                    <p>宁海变电所</p>
+                                    <p>变压器</p>
+                                    <p>80%</p>
+                                </li>
+                                <li class="list_info_body">
+                                    <p>宁海变电所</p>
+                                    <p>变压器</p>
+                                    <p>80%</p>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -581,7 +629,55 @@
             </div>
         </div>
     </div>
+
+
+    <script>
+        var height = document.body.scrollHeight;
+        var width = document.body.offsetWidth;
+
+        $(".block_1").css('height',height*0.355);
+        $(".date_box").css('margin-top',height*0.033);
+        $(".load_status_box").css('margin-top',height*0.033);
+
+
+        $(".block_2").css('height',height*0.32);
+        $(".curve_box_title").css('height',height*0.0388);
+
+        $(".block_3").css('height',height*0.325);
+
+        $("#main1").css('height',height*0.272);
+        $("#main2").css('height',height*0.272);
+
+        $(".block_4").css('height',height*0.07);
+        $(".main_box_title").css('height',height*0.0388);
+
+        $(".block_5").css('height',height*0.605);
+
+
+        $(".block_6").css('height',height*0.31);
+        $(".scale").css('height',height*0.244);
+
+
+        $(".block_7").css('height',height*0.353);
+
+        $(".block_9").css('height',height*0.313);
+        $(".list_box").css('height',height*0.313);
+
+
+        $(".list2_title").css('height',height*0.04);
+
+        $(".block_10").css('height',height*0.313);
+        $(".block_9").css('margin-top',height*0.033);
+        $(".block_10").css('margin-top',height*0.033);
+
+        $(".block_11").css('height',height*0.638);
+        $(".block_12").css('height',height*0.638);
+
+    </script>
+
     <script type="text/javascript" src="js/chart01.js"></script>
     <script type="text/javascript" src="js/chart02.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+
 </body>
 </html>
