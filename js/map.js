@@ -654,4 +654,6 @@ option = {
     ]
 };
 
-convertData();
+
+var myChart22 = echarts.init(document.getElementById('item'));
+

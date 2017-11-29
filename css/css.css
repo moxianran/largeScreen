@@ -106,15 +106,15 @@ input{outline: none;}
 }
 .load_status_title {
     height: 0;
-    border-bottom: 39px solid #0456C5;
+    border-bottom: 2em solid #0456C5;
     border-left: 0px solid transparent;
-    border-right: 19px solid transparent;
+    border-right: 1em solid transparent;
     color: #FFF;
     text-align: center;
     font-size: 1em;
     font-weight: bold;
-    line-height: 40px;
-    letter-spacing: 1px;
+    line-height: 225%;
+    letter-spacing: 0.1em;
 }
 .load_status_info{
     border:1px solid #0548C3;
@@ -124,9 +124,9 @@ input{outline: none;}
     height: 15%;
     text-align: center;
     line-height: 250%;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
     color: #449BE9;
-    font-size: 1em;
+    font-size: 0.75em;
 }
 .date_p em{
     color: #FFF;
@@ -232,7 +232,7 @@ input{outline: none;}
     font-size: 0.75em;
     height: 100%;
     background: #081B7E;
-    margin: 0 6px;
+    margin: 0 3%;
     text-align: center;
 }
 .load_status_info_box p b{
@@ -269,12 +269,13 @@ input{outline: none;}
 }
 .block_4_box{
     height:100%;
+    overflow: hidden;
 }
 .tit_box{
     height: 33%;
     color: #00FCFD;
     font-size: 0.75em;
-    margin: 7% 0 0 2%;
+    margin: 7% 0 0 1%;
     border-right:2px solid #00FCFD;
     padding-right:2%;
 }
@@ -288,7 +289,7 @@ input{outline: none;}
     height: 33%;
     color: #00FCFD;
     font-size: 0.75em;
-    margin: 7% 0 0 3%;
+    margin: 7% 0 0 1%;
     padding-right:1%;
 }
 .tit_box2 span{
@@ -302,7 +303,7 @@ input{outline: none;}
     text-align: center;
     line-height: 300%;
     height: 100%;
-    font-size: 1.3em;
+    font-size: 1em;
     letter-spacing: 0.1em;
     font-weight: bold;
 }
@@ -312,12 +313,8 @@ input{outline: none;}
     border-radius: 50px;
     border: none;
     color: #FFF;
-    font-size: 0.875em;
-    padding-left: 20px;
-    height: 20px;
-    line-height: 20px;
-    text-align: center;
-    margin-top: 10px;
+    font-size: 0.75em;
+    padding-left: 20%;
     width: 130px;
     margin: 10% 0 0 22%;
 }
@@ -375,9 +372,8 @@ input{outline: none;}
 }
 .scale p{
     color: #FFF;
-    font-size: 0.875em;
+    font-size: 0.75em;
     height: 14%;
-    line-height: 30px;
 }
 .scale span{
     display: block;
@@ -386,6 +382,7 @@ input{outline: none;}
     border-right: 1px solid #0548C3;
     width: 60%;
     text-indent: 12%;
+    height: 100%;
 }
 .scale em{
     color:yellow;
@@ -394,6 +391,7 @@ input{outline: none;}
     border-top:1px solid #0548C3;
     border-right:1px solid #0548C3;
     width:39%;
+    height: 100%;
 }
 .scale i{
     display: block;
@@ -427,6 +425,7 @@ input{outline: none;}
     display: block;
     float: left;
     margin-left:10px;
+    font-size: 0.75em;
 }
 
 .list_box{
@@ -435,14 +434,14 @@ input{outline: none;}
 }
 .list_title {
     height: 0;
-    border-bottom: 39px solid #0456C5;
+    border-bottom: 2em solid #0456C5;
     border-left: 19px solid transparent;
     border-right: 0px solid transparent;
     color: #FFF;
     text-align: center;
     font-size: 1em;
     font-weight: bold;
-    line-height: 40px;
+    line-height: 225%;
     letter-spacing: 0.1em;
 }
 .list_info{
@@ -475,7 +474,8 @@ input{outline: none;}
 }
 .list_info_body p{
     float: left;
-    width: 33.33%;
+    width: 32.33%;
+    margin-left: 1%;
     text-align: center;
     color: #FFF;
     font-size: 0.75em;

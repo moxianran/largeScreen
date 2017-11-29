@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1e9bcc1-44fb-492d-b4d5-a9124f6d410c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/a.php" afterPath="$PROJECT_DIR$/a.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/b.php" afterPath="$PROJECT_DIR$/b.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/css.css" afterPath="$PROJECT_DIR$/css/css.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fuzaimoshi.php" afterPath="$PROJECT_DIR$/fuzaimoshi.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/echarts.js" afterPath="$PROJECT_DIR$/js/echarts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery-1.9.js" afterPath="$PROJECT_DIR$/js/jquery-1.9.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery.min.js" afterPath="$PROJECT_DIR$/js/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/map.js" afterPath="$PROJECT_DIR$/js/map.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,6 +28,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="css.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/css.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="235" column="23" lean-forward="false" selection-start-line="235" selection-start-column="23" selection-end-line="235" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="chart01.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/chart01.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -44,12 +48,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="map.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/map.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="369" column="10" lean-forward="true" selection-start-line="369" selection-start-column="10" selection-end-line="369" selection-end-column="10" />
-              <folding />
+            <state relative-caret-position="658">
+              <caret line="657" column="13" lean-forward="false" selection-start-line="657" selection-start-column="13" selection-end-line="657" selection-end-column="13" />
+              <folding>
+                <element signature="e#12#5587#0" expanded="false" />
+                <element signature="e#5608#10494#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,6 +74,8 @@
     <findStrings>
       <find>logo</find>
       <find>data</find>
+      <find>hei</find>
+      <find>px</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -81,9 +90,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/fuzaimoshi.html" />
-        <option value="$PROJECT_DIR$/css/css.css" />
         <option value="$PROJECT_DIR$/fuzaimoshi.php" />
         <option value="$PROJECT_DIR$/js/map.js" />
+        <option value="$PROJECT_DIR$/css/css.css" />
       </list>
     </option>
   </component>
@@ -141,7 +150,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -551,12 +560,12 @@
       <updated>1511230857709</updated>
       <workItem from="1511230859281" duration="3256000" />
       <workItem from="1511262108965" duration="5478000" />
-      <workItem from="1511949310892" duration="708000" />
+      <workItem from="1511949310892" duration="3849000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9442000" />
+    <option name="totallyTimeSpent" value="12583000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="0" width="1440" height="900" extended-state="6" />
@@ -620,14 +629,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fuzaimoshi.html" />
-    <entry file="file://$PROJECT_DIR$/css/css.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="493" column="1" lean-forward="false" selection-start-line="493" selection-start-column="1" selection-end-line="493" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/chart01.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -646,8 +647,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="369" column="10" lean-forward="true" selection-start-line="369" selection-start-column="10" selection-end-line="369" selection-end-column="10" />
+        <state relative-caret-position="658">
+          <caret line="657" column="13" lean-forward="false" selection-start-line="657" selection-start-column="13" selection-end-line="657" selection-end-column="13" />
+          <folding>
+            <element signature="e#12#5587#0" expanded="false" />
+            <element signature="e#5608#10494#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/css.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="235" column="23" lean-forward="false" selection-start-line="235" selection-start-column="23" selection-end-line="235" selection-end-column="23" />
           <folding />
         </state>
       </provider>
