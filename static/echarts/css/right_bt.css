@@ -1,0 +1,37 @@
+#menuuu {
+	position: fixed;
+	border-radius :5px;
+	border: 1px outset #F6F6F6 !important;
+	border-color: #FFFFFF;
+	z-index: 10000;
+	left: 300px;
+	top: 200px;
+	display: none;
+	width: 100px;
+	height: 30px;
+	background: #CDEBF9;
+	filter: alpha(opacity : 80);
+	opacity: 0.8;
+	overflow: hidden;
+}
+
+#menuuu ul {
+	padding-top: 3px;
+	padding-left: 2px;
+	margin: 0px;
+	list-style-type: none;
+	vertical-align: middle;
+}
+
+#menuuu ul li {
+	padding: 0px;
+	margin-top: 1px;
+	padding-left:8px;
+	border-top: 1px solid #fff !important;
+	border-bottom: 1px outset #fff !important;
+	border-color: #fff;
+	font-family: "Î¢ÈíÑÅºÚ";
+	width: 96px;
+	text-align:left;
+	font-size: 12px;
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>运行模式</title>
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/echarts.js"></script>
+    <script type="text/javascript" src="js/Date.js"></script>
+    <script src="static/echarts/src/echarts-oss.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="static/echarts/esl.js"></script>
+
+</head>
+
+<body>
+    <div class="controller">
+
+        <div class="block w30 fl">
+            <!--小屏1开始-->
+            <div class="block_1">
+
+                <div class="date_box fl">
+
+                    <p class="date_p">
+                        <em id="year"></em>年<em id="month"></em>月<em id="day"></em>日 星期<em id="week"></em>
+                    </p>
+                    <p class="time_p">
+                        <em id="hour"></em>时<em id="minute"></em>分<em id="second"></em>秒
+                    </p>
+                    <p class="safe_day">
+                        安全天数<span id="safeTime"></span>天
+                    </p>
+
+                    <div class="electricity_num">
+                        <p>昨日全县用电量</p>
+                        <span><em>123123</em>万KWh</span>
+                    </div>
+                    <div class="load_rate">
+                        <p>昨日全县负荷率</p>
+                        <span><em>非数字</em>%</span>
+                    </div>
+                </div>
+
+                <div class="load_status_box fl">
+                    <div class="load_status_title">负荷情况</div>
+
+                    <div class="load_status_info">
+                        <div class="load_status_info_box" id="fhpanel">
+                            <p>
+                                <span>当前宁波总负荷</span>
+                                <em>132123.3</em>
+                                <b>MW</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--小屏1结束-->
+
+            <!--小屏2开始-->
+            <div class="block_2">
+                <div class="curve_box">
+                    <div class="curve_box_title">宁海全县负荷曲线</div>
+                    <div class="curve_box_info" id="main1"></div>
+                </div>
+            </div>
+            <!--小屏2结束-->
+
+            <!--小屏3开始-->
+            <div class="block_3">
+                <div class="curve_box">
+                    <div class="curve_box_title">各乡镇负荷曲线</div>
+                    <div class="curve_box_info" id="main2"></div>
+                </div>
+            </div>
+            <!--小屏3结束-->
+
+        </div>
+
+        <div class="block w40 fl">
+
+            <!--小屏4开始-->
+            <div class="block_4">
+                <div class="block_4_box">
+                    <div class="w41 fl">
+                        <div class="logo fl">
+                            <img src="img/img1.png" />
+                        </div>
+                        <div class="tit_box fl">
+                            <span>国家电网</span>
+                            <em>STATE GRID</em>
+                        </div>
+                        <div class="tit_box2 fl">
+                            <span>国网宁海供电公司</span>
+                            <em>The NingHai Power Company</em>
+                        </div>
+
+                    </div>
+                    <div class="w30 fl site_title">电子信息大屏展示系统</div>
+                    <div class="w29 fl change_box">
+                        <div class="change_dv">
+                            <select>
+                                <option value="fz1.html">负载模式</option>
+                                <option value="fz2.html">视频模式</a></option>
+                                <option value="fz3.html">运行模式</a></option>
+                                <option value="fz4.html">10年供电</a></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--小屏4结束-->
+
+            <div class="block_5">
+                <div class="main_box">
+                    <div class="main_box_title">宁海电网主网接线图</div>
+                    <iframe src="map.html" frameborder="0" scrolling="no" style="width:100%;height:450px;"></iframe>
+
+                    <!--<div class="main_box_info" id="container" style="height:450px">-->
+
+                    <!--</div>-->
+                </div>
+            </div>
+            <div class="block_6">
+                <div class="scale fl">
+                    <div class="scale_bg"></div>
+                    <div class="scale_info">
+                        <h1>电网规模</h1>
+                        <p>
+                            <span>统调电厂</span>
+                            <em><b>座</b><i>-</i></em>
+                        </p>
+                        <p>
+                            <span>500kv线路</span>
+                            <em><b>座</b><i>-</i></em>
+                        </p>
+                        <p>
+                            <span>220kv线路</span>
+                            <em><b>座</b><i>-</i></em>
+                        </p>
+                        <p>
+                            <span>500kv变电站</span>
+                            <em><b>座</b><i>-</i></em>
+                        </p>
+                        <p>
+                            <span>220kv变电站</span>
+                            <em><b>座</b><i>-</i></em>
+                        </p>
+                        <p>
+                            <span>电铁牵引站</span>
+                            <em><b>座</b><i>-</i></em>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="icon_box_1">
+                    <p>
+                        <em><img src="img/b1.png"></em>
+                        <span>220KW变点站</span>
+                    </p>
+                    <p>
+                        <em><img src="img/b2.png"/></em>
+                        <span>220KW变点站</span>
+                    </p>
+                    <p>
+                        <em><img src="img/b3.png"/></em>
+                        <span>220KW变点站</span>
+                    </p>
+                </div>
+
+                <div class="icon_box_1">
+                    <p>
+                        <em class="line220"></em>
+                        <span>220KW变点站</span>
+                    </p>
+                    <p>
+                        <em class="line110"></em>
+                        <span>110KW变点站</span>
+                    </p>
+                    <p>
+                        <em class="line35"></em>
+                        <span>35KW变点站</span>
+                    </p>
+                    <p>
+                        <em class="line10"></em>
+                        <span>10KW变点站</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="block w30 fl">
+            <div class="block_table">
+                <!--  宁海区域电厂出力情况-->
+                <div class="block_table_title1">宁海区域电厂出力情况</div>
+                <div class="block_table_body" id="main3"></div>
+
+                <!--各乡镇负荷情况、所占比重-->
+                <div class="block_table_title2">各乡镇负荷情况、所占比重</div>
+                <div class="block_table_body" id="main4"></div>
+
+                <!--宁波其他县市区实时负荷情况-->
+                <div class="block_table_title2">宁波其他县市区实时负荷情况</div>
+                <div class="block_table_body" id="main5"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/setHeight.js"></script>
+    <script type="text/javascript" src="js/chart01.js"></script>
+    <script type="text/javascript" src="js/chart02.js"></script>
+
+    <script type="text/javascript" src="js/map2.js"></script>
+    <!-- 负荷情况 -->
+    <script type="text/javascript" src="js/p1_fh.js"></script>
+    <!-- 电厂出力 -->
+    <script type="text/javascript" src="js/p3_pie.js"></script>
+
+</body>
+
+</html>

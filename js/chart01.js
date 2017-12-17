@@ -1,142 +1,149 @@
-var a = [];//全县总有功
-var b = [];//网供总有功
-var c = [];//昨日全县总有功
-var time_data = [
-    '00:00','04:00','08:00','12:00','16:00','20:00','24:00',
-];
-var time_data_array = [
-    '00:05','04:00','08:00','12:00','16:00','20:00','00:00',
-];
-
-$(function () {
+$(function() {
     // 基于准备好的dom，初始化echarts实例
-
     $.ajax({
-        url: "a.php",
-        type: "post",
+        url: "/db/nh_qx_fz.json",
         dataType: 'json',
-        success: function (data) {
-            for(var i = 0; i < data.length; i++){
-                if(data[i]['name'] == '全县总有功') {
-                    if($.inArray(data[i]['time'].substring(11,16), time_data) >= 0) {
-                        //console.log(data[i]['time'].substring(11,16));
-                        a.push(data[i]['cdz']);
+        success: function(data) {
+            var legends = [];
+            var xAxis = [];
+            var yAxis = [];
+            var list = [];
+
+            for (var i in data) {
+                if ($.inArray(data[i].name, legends) < 0) {
+                    legends.push(data[i].name);
+                }
+
+                data[i].time = data[i].time.split(".")[0];
+                // list.push(data[i].cdz);
+
+                var ie = false;
+                for (var j in list) {
+                    if (list[j].name == data[i].name) {
+                        list[j].data.push(data[i]);
+                        ie = true;
                     }
-                } else if(data[i]['name'] == '网供总有功') {
-                    if($.inArray(data[i]['time'].substring(11,16), time_data) >= 0) {
-                        //console.log(data[i]['time'].substring(11,16));
-                        b.push(data[i]['cdz']);
-                    }
-                } else if(data[i]['name'] == '昨日全县总有功') {
-                    if($.inArray(data[i]['time'].substring(11,16), time_data) >= 0) {
-                        //console.log(data[i]['time'].substring(11,16));
-                        c.push(data[i]['cdz']);
-                    }
+                }
+
+                if (!ie) {
+                    list.push({ name: data[i].name, data: [data[i]] });
+                }
+                if ($.inArray(data[i].time, xAxis) < 0) {
+                    xAxis.push(data[i].time);
+                }
+            }
+
+            var nlist = [];
+
+            var colorlist =  [
+                "#ff6340",
+                "#00b2ff",
+                "#09c981",
+                "#fc00b7",
+                "#00e0ff",
+                "#fffae8",
+                "#ffff87",
+                "#2809e6",
+                "#2bffc2",
+                "#ff8cfd"
+            ];
+            for (var i in list) {
+                var ds = [];
+                for (var j in xAxis) {
+                    ds.push("");
+                }
+                for (var j in list[i].data) {
+                    var inx = $.inArray(list[i].data[j].time, xAxis);
+                    ds[inx] = list[i].data[j].cdz;
+                }
+
+                nlist[i] = {
+                    name: list[i].name,
+                    type: 'line',
+                    // data: list,
+                    lineStyle: {
+                        normal: { color: colorlist[i] }
+                    },
+                    itemStyle: {
+                        normal: { color: colorlist[i] }
+                    },
+                    data: ds
                 }
             }
 
             var myChart = echarts.init(document.getElementById('main1'));
             option = {
                 title: {
-                    text: '',//名字
-                    textStyle:{
-                        color:"#FFF",
-                        fontWeight:"normal",
-                        fontSize:"16"
+                    text: '', //名字
+                    textStyle: {
+                        color: "#FFF",
+                        fontWeight: "normal",
+                        fontSize: "16"
                     }
                 },
                 tooltip: {
                     trigger: 'axis'
                 },
                 legend: {
-                    data:['全县总有功','圈供总有功','昨日全县总有功'],
-                    textStyle:{
-                        color:"#fff"
+                    data: legends,
+                    textStyle: {
+                        color: "#fff"
                     }
                 },
-                xAxis:  {
+                xAxis: {
                     type: 'category',
-                    axisLabel:{
-                        textStyle:{
-                            color:"#fff"
+                    axisLabel: {
+                        textStyle: {
+                            color: "#fff"
+                        },
+                        formatter: function(v, i) {
+                            var d = new Date(v);
+                            var h = d.getHours();
+                            var m = d.getMinutes();
+                            h = parseInt(h / 10) == 0 ? "0" + h : h;
+                            m = parseInt(m / 10) == 0 ? "0" + m : m;
+                            return h + ":" + m;
                         }
                     },
-                    axisLine:{
-                        lineStyle:{
-                            color:"#1F479A"
+                    axisLine: {
+                        lineStyle: {
+                            color: "#1F479A"
                         }
                     },
-                    axisTick:{
-                        lineStyle:{color:"#1F479A"}
+                    axisTick: {
+                        lineStyle: { color: "#1F479A" }
                     },
-                    splitLine:{
-                        lineStyle:{color:"#1F479A"}
+                    splitLine: {
+                        lineStyle: { color: "#1F479A" }
                     },
                     boundaryGap: false,
-                    data: time_data
+                    data: xAxis,
                 },
                 yAxis: {
                     type: 'value',
                     axisLabel: {
-                        textStyle:{
-                            color:"#fff"
+                        textStyle: {
+                            color: "#fff"
                         }
                     },
-                    axisLine:{
-                        lineStyle:{
-                            color:"#1F479A"
+                    axisLine: {
+                        lineStyle: {
+                            color: "#1F479A"
                         }
                     },
-                    axisTick:{
-                        lineStyle:{color:"#1F479A"}
+                    axisTick: {
+                        lineStyle: { color: "#1F479A" }
                     },
-                    splitLine:{
-                        lineStyle:{color:"#1F479A"}
-                    },
-                    data:[25000, 325000, 25704, 40000, 35420, 25421, 50000],
-                },
-                series: [
-                    {
-                        name:'全县总有功',
-                        type:'line',
-                        data:a,
-                        lineStyle:{
-                            normal:{color:'#DA8568'}
-                        },
-                        itemStyle:{
-                            normal:{color:"#DA8568"}
-                        }
-                    },
-                    {
-                        name:'圈供总有功',
-                        type:'line',
-                        data:b,
-                        lineStyle:{
-                            normal:{color:'#2CBCBD'}
-                        },
-                        itemStyle:{
-                            normal:{color:"#2CBCBD"}
-                        }
-                    },
-                    {
-                        name:'昨日全县总有功',
-                        type:'line',
-                        data:c,
-                        lineStyle:{
-                            normal:{color:'#FDF002'}
-                        },
-                        itemStyle:{
-                            normal:{color:"#FDF002"}
-                        }
+                    splitLine: {
+                        lineStyle: { color: "#1F479A" }
                     }
-                ]
+                },
+                series: nlist
             };
+
 
             // 使用刚指定的配置项和数据显示图表。
             myChart.setOption(option);
-
-
-
         }
     })
 

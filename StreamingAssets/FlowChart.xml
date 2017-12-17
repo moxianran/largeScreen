@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<options> 
+  <option> 
+    <linename>宁苍4P56线</linename>  
+    <id>ST=210000003/LN=240000174</id>  
+    <flowto>false</flowto>  
+    <stationName>宁海变</stationName> 
+  </option>  
+  <option> 
+    <linename>宁雁4P55线</linename>  
+    <id>ST=210000003/LN=240000183</id>
+    <flowto>false</flowto>  
+    <stationName>宁海变</stationName> 
+  </option>  
+</options>

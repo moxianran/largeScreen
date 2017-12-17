@@ -34,10 +34,8 @@ window.onload = function() {
     var str = a[w];
     week.html(str);
     //判断时间格式是否小于10，始终以两位形式输出
-    function checkTime(i)
-    {
-        if (i<10)
-        {i="0" + i}
+    function checkTime(i) {
+        if (i < 10) { i = "0" + i }
         return i
     }
     //安全日
@@ -45,10 +43,10 @@ window.onload = function() {
     //2.设置定时器，定时获取当前时间戳ms
     //3.使用当前时间-初始时间=安全运行时间（ms)
     //4.转化成单位天：ms / (1000 * 60 * 60 * 24)
-    var initialTime=1497019234563;
-    setInterval(function () {
-        var NowTime=new Date().getTime();
-        var duringTime=parseInt((NowTime-initialTime)/(1000*60*60*24));
+    var initialTime = 1497019234563;
+    setInterval(function() {
+        var NowTime = new Date().getTime();
+        var duringTime = parseInt((NowTime - initialTime) / (1000 * 60 * 60 * 24));
         safeTime.html(duringTime);
-    },1000);
+    }, 1000);
 };

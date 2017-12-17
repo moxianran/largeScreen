@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<options> 
+  <option> 
+    <linestrip>4.0</linestrip>  
+    <linekilometre>5.0</linekilometre>  
+    <powerstation>1.0</powerstation>  
+    <name>500kV</name>  
+    <capacity>3.0</capacity>  
+    <transformer>2.0</transformer> 
+  </option>  
+  <option> 
+    <linestrip>9.0</linestrip>  
+    <linekilometre>10.0</linekilometre>  
+    <powerstation>6.0</powerstation>  
+    <name>220kV</name>  
+    <capacity>8.0</capacity>  
+    <transformer>7.0</transformer> 
+  </option>  
+  <option> 
+    <linestrip>14.0</linestrip>  
+    <linekilometre>15.0</linekilometre>  
+    <powerstation>11.0</powerstation>  
+    <name>110kV</name>  
+    <capacity>13.0</capacity>  
+    <transformer>12.0</transformer> 
+  </option> 
+</options>
