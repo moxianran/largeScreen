@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1e9bcc1-44fb-492d-b4d5-a9124f6d410c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/a.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/b.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fuzaimoshi.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/shipinmoshi.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/我的装修设计指南.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/css.css" afterPath="$PROJECT_DIR$/css/css.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Date.js" afterPath="$PROJECT_DIR$/js/Date.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/chart01.js" afterPath="$PROJECT_DIR$/js/chart01.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/chart02.js" afterPath="$PROJECT_DIR$/js/chart02.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/map.js" afterPath="$PROJECT_DIR$/js/map.js" />
-    </list>
+    <list default="true" id="e1e9bcc1-44fb-492d-b4d5-a9124f6d410c" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -618,12 +605,12 @@
       <workItem from="1511262108965" duration="5478000" />
       <workItem from="1511949310892" duration="3964000" />
       <workItem from="1513305818652" duration="12102000" />
-      <workItem from="1513473725910" duration="4232000" />
+      <workItem from="1513473725910" duration="4827000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29032000" />
+    <option name="totallyTimeSpent" value="29627000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="0" width="1440" height="900" extended-state="0" />
