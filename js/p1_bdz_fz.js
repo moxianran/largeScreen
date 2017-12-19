@@ -51,7 +51,7 @@ $(function() {
     }
 
     //变电站负载
-    $.get("/db/bdz_fz.json", function(list) {
+    $.get("db/bdz_fz.json", function(list) {
         var bd220s = [];
         var bd110s = [];
         var bd35s = [];
@@ -85,7 +85,7 @@ $(function() {
         displayBDZ(bd35s, "bf35");
     });
     //线路负载
-    $.get("/db/bdz_xl_fz.json", function(list) {
+    $.get("db/bdz_xl_fz.json", function(list) {
         var bx220s = [];
         var bx110s = [];
         var bx35s = [];

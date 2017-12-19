@@ -21,7 +21,7 @@ $(function() {
     }
 
     //负荷情况
-    $.get("/db/fh.json", function(list) {
+    $.get("db/fh.json", function(list) {
         var nlist = [];
 
         for (var i in list) {

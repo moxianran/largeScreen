@@ -1,7 +1,7 @@
 $(function() {
     var myChart = echarts.init(document.getElementById('main6'));
 
-    $.get("/db/bdz_sn.json", function(data) {
+    $.get("db/bdz_sn.json", function(data) {
         var xAxis = [];
         var d1 = [];
         var d2 = [];

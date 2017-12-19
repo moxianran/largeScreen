@@ -1,5 +1,5 @@
 $(function() {
-    $.get("/db/dc_cl.json", function(data) {
+    $.get("db/dc_cl.json", function(data) {
 
         var legendData = [];
         var seriesData = [];
@@ -83,7 +83,7 @@ $(function() {
         myChart.setOption(option);
     })
 
-    $.get("/db/gx_fh.json", function(data) {
+    $.get("db/gx_fh.json", function(data) {
 
         var legendData = [];
         var seriesData = [];
@@ -168,7 +168,7 @@ $(function() {
     });
 
     var aaaaa;
-    $.get("/db/qtz_fz.json", function(data) {
+    $.get("db/qtz_fz.json", function(data) {
         var nb_other_name = [];
         var nb_other_val = [];
         for (var i = 0; i < data.length; i++) {

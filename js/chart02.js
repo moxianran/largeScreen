@@ -1,7 +1,7 @@
 $(function() {
     // 基于准备好的dom，初始化echarts实例
     $.ajax({
-        url: "/db/nh_gx_fz.json",
+        url: "db/nh_gx_fz.json",
         dataType: 'json',
         success: function(data) {
             var legends = [];
